@@ -12,8 +12,9 @@ function App() {
   const [ansWord, setAnsWord] = useState(guessed);
   const [onDelete, setonDelete] = useState(() => {});
   const [win, setwin] = useState(0);
+  const [currentWord, setCurrentWord] = useState("");
   // console.log(guessed);
-  // console.log(win);
+  // console.log(keyPressed);
   const [currentColorArray, setcurrentColorArray] = useState([
     "black",
     "black",
@@ -40,6 +41,7 @@ function App() {
           collorArray={collorArray}
           setonDelete={setonDelete}
           rightAnswer={guessed}
+          currentWord={currentWord}
         />
       </Container>
       <KeyPads
@@ -49,6 +51,8 @@ function App() {
         onDelete={onDelete}
         setwin={setwin}
         win={win}
+        currentWord={currentWord}
+        setCurrentWord={setCurrentWord}
       />
       <InitialMessage />
     </>

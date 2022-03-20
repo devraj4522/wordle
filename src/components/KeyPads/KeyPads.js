@@ -9,18 +9,17 @@ import { useStyles } from "./style";
 const KeyPads = (props) => {
   const classes = useStyles();
   // console.log(classes);
-  const [currentWord, setCurrentWord] = useState("");
   const [isvalidWord, setisvalidWord] = useState(false);
 
   const onDeleteLetter = () => {
     // console.log("backspace");
-    if (!currentWord) return;
-    const word = currentWord.slice(0, -1);
+    if (!props.currentWord) return;
+    const word = props.currentWord.slice(0, -1);
     setTimeout(() => {
-      setCurrentWord(word);
+      props.setCurrentWord(word);
       props.onDelete();
     }, 0);
-    // console.log(currentWord);
+    // console.log(props.currentWord);
   };
 
   const validate = () => {
@@ -40,8 +39,8 @@ const KeyPads = (props) => {
             <Key
               key={index}
               keyValue={item}
-              currentWord={currentWord}
-              setCurrentWord={setCurrentWord}
+              currentWord={props.currentWord}
+              setCurrentWord={props.setCurrentWord}
               setkeyPressed={props.setkeyPressed}
               setCollorArray={props.setcollorArray}
               ansWord={props.ansWord}
@@ -56,8 +55,8 @@ const KeyPads = (props) => {
             <Key
               key={index}
               keyValue={item}
-              currentWord={currentWord}
-              setCurrentWord={setCurrentWord}
+              currentWord={props.currentWord}
+              setCurrentWord={props.setCurrentWord}
               setkeyPressed={props.setkeyPressed}
               ansWord={props.ansWord}
               setCollorArray={props.setcollorArray}
@@ -75,8 +74,8 @@ const KeyPads = (props) => {
             <Key
               key={index}
               keyValue={item}
-              setCurrentWord={setCurrentWord}
-              currentWord={currentWord}
+              setCurrentWord={props.setCurrentWord}
+              currentWord={props.currentWord}
               setkeyPressed={props.setkeyPressed}
               setCollorArray={props.setcollorArray}
               ansWord={props.ansWord}

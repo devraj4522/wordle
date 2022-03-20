@@ -53,7 +53,7 @@ const WordleGrid = (props) => {
         setshowAns(props.rightAnswer);
       }
     }
-  }, [props.keyPressed]);
+  }, [props.keyPressed, props.currentWord]);
 
   return (
     <div>
