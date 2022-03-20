@@ -14,11 +14,12 @@ const WordleGrid = (props) => {
   ]);
   const [currIndex, setCurrIndex] = useState(0);
   const [showAns, setshowAns] = useState(false);
-
+  // console.log(wordleArray);
   useEffect(() => {
     props.setonDelete(() => onDelete);
   }, [wordleArray, currIndex]);
 
+  // console.log(props.keyPressed);
   const onDelete = () => {
     if (currIndex == 0) return;
     const newWordleArray = wordleArray;
@@ -52,8 +53,9 @@ const WordleGrid = (props) => {
       if (index == 24) {
         setshowAns(props.rightAnswer);
       }
+      props.setkeyPressed("");
     }
-  }, [props.keyPressed, props.currentWord]);
+  }, [props.keyPressed, props.setkeyPressed]);
 
   return (
     <div>

@@ -35,6 +35,7 @@ const Key = (props) => {
       props.setkeyPressed(val);
       props.setCurrentWord(currentWord);
     }
+    // console.log(currentWord);
   };
   return (
     <IconButton

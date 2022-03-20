@@ -13,7 +13,7 @@ function App() {
   const [onDelete, setonDelete] = useState(() => {});
   const [win, setwin] = useState(0);
   const [currentWord, setCurrentWord] = useState("");
-  // console.log(guessed);
+  // console.log(currentWord);
   // console.log(keyPressed);
   const [currentColorArray, setcurrentColorArray] = useState([
     "black",
@@ -36,6 +36,7 @@ function App() {
         <LogoTitle />
         <WordleGrid
           keyPressed={keyPressed}
+          setkeyPressed={setkeyPressed}
           currentColorArray={currentColorArray}
           setcollorArray={setcollorArray}
           collorArray={collorArray}

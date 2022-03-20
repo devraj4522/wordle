@@ -20,6 +20,7 @@ const KeyPads = (props) => {
       props.onDelete();
     }, 0);
     // console.log(props.currentWord);
+    // console.log(word);
   };
 
   const validate = () => {
