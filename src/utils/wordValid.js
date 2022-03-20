@@ -19,7 +19,7 @@ export const allMatchingLetter = (word, correctWord) => {
       }
     }
   }
-  console.log(letterColors);
+  // console.log(letterColors);
   return letterColors;
 };
 

@@ -15,7 +15,7 @@ const Key = (props) => {
     const currentWord = props.currentWord + val;
 
     if (currentWord.length == 5) {
-      console.log("validate word of length 5");
+      // console.log("validate word of length 5");
       // ToDo: If word is valid move to next line
       if (isWordValid(currentWord, WORDS)) {
         props.setkeyPressed(val);
@@ -24,7 +24,7 @@ const Key = (props) => {
         props.setCurrentWord("");
         if (isWin(machingColorArray)) {
           const win = props.win;
-          console.log(win);
+          // console.log(win);
           props.setwin(win + 1);
         }
       } else {

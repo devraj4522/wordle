@@ -8,19 +8,19 @@ import { useStyles } from "./style";
 
 const KeyPads = (props) => {
   const classes = useStyles();
-  console.log(classes);
+  // console.log(classes);
   const [currentWord, setCurrentWord] = useState("");
   const [isvalidWord, setisvalidWord] = useState(false);
 
   const onDeleteLetter = () => {
-    console.log("backspace");
+    // console.log("backspace");
     if (!currentWord) return;
     const word = currentWord.slice(0, -1);
     setTimeout(() => {
       setCurrentWord(word);
       props.onDelete();
     }, 0);
-    console.log(currentWord);
+    // console.log(currentWord);
   };
 
   const validate = () => {
