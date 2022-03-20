@@ -1,6 +1,6 @@
 export const style = {
   fontFamily: "Dancing Script",
   textAlign: "center",
-  marginTop: "-2rem",
-  marginBottom: "2rem",
+  marginTop: "0.5rem",
+  marginBottom: "0.5rem",
 };

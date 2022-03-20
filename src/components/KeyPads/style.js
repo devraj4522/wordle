@@ -8,10 +8,11 @@ export const useStyles = makeStyles({
       height: "58px",
       lineHeight: "58px",
       maxWidth: "48px",
-      minWidth: "37px",
+      minWidth: "35px",
       /* left: 6px; */
       color: "#fff",
       fontSize: "15px",
+      margin: ".5px",
     },
     "&:hover": {
       color: "#646c5f",
@@ -47,12 +48,16 @@ export const useStyles = makeStyles({
   keyboard: {
     "&&": {
       height: "200px",
-      width: "95vw",
-      maxWidth: "486px",
+      width: "breakpont.keys.lg",
+      maxWidth: "375",
       // backgroundColor: "#D7DADC",
       margin: "auto",
       marginBottom: "8px",
       marginTop: "3vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
     },
   },
   keyRow: {
