@@ -5,6 +5,7 @@ import WordleGrid from "./components/WordleGrid/WordleGrid";
 import Container from "@mui/material/Container";
 import { useState } from "react";
 import { guessed } from "./utils/answers";
+import InitialMessage from "./components/GameRule/InitialMessage";
 
 function App() {
   const [keyPressed, setkeyPressed] = useState("");
@@ -49,6 +50,7 @@ function App() {
         setwin={setwin}
         win={win}
       />
+      <InitialMessage />
     </>
   );
 }

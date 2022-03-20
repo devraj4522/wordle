@@ -72,7 +72,6 @@ const WordleGrid = (props) => {
         ))}
       </Grid>
       {showAns && <ShowAns rightAnswer={props.rightAnswer} />}
-      {<ShowAns rightAnswer={props.rightAnswer} setshowAns={setshowAns} />}
     </div>
   );
 };
