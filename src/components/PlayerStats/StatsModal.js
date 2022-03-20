@@ -24,7 +24,7 @@ const StatsModal = (props) => {
     animation: "SlideIn 200ms",
     maxWidth: "75vw",
     maxHeight: "75vh",
-    overflow: "scroll",
+    overflow: "auto",
     p: 4,
   };
 
