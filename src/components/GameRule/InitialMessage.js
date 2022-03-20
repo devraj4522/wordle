@@ -33,7 +33,6 @@ const InitialMessage = (props) => {
         open={open}
         onClose={() => {
           handleClose();
-          props.setshowAns(false);
         }}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
