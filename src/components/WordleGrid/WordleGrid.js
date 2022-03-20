@@ -27,7 +27,7 @@ const WordleGrid = (props) => {
     const newIndex = currIndex - 1;
     setCurrIndex(newIndex);
     setWordleArray(newWordleArray);
-    console.log(newWordleArray);
+    // console.log(newWordleArray);
   };
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const WordleGrid = (props) => {
       }
 
       // if wordle is complete decide win or loss
-      console.log(index);
+      // console.log(index);
       if (index == 24) {
         setshowAns(props.rightAnswer);
       }
