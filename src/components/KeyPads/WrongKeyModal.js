@@ -16,10 +16,14 @@ const WrongKeyModal = (props) => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 400,
     bgcolor: "background.paper",
-    border: "2px solid #000",
-    boxShadow: 24,
+    border: "1px solid #f6f7f8",
+    boxShadow: "0 4px 23px 0 rgba(0, 0, 0, 0.2)",
+    borderRadius: "8px",
+    animation: "SlideIn 200ms",
+    maxWidth: "75vw",
+    maxHeight: "75vh",
+    overflow: "auto",
     p: 4,
   };
 
@@ -36,10 +40,12 @@ const WrongKeyModal = (props) => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Incorrect Word!
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            This is not a valid word.
+            <br />
+            Please Enter Correct Word.
           </Typography>
         </Box>
       </Modal>
